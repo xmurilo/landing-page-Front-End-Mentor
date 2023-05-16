@@ -1,0 +1,11 @@
+@keyframes down-arrow {
+  0% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translateY(0.5rem);
+    opacity: 0.9;
+  }
+}

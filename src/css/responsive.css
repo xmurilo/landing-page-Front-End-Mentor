@@ -1,0 +1,159 @@
+/* ---Mobile--- */
+@media (min-width: 390px) {
+  
+}
+@media (min-width: 600px) {
+  .header label, .detail-menu {
+    display: none;
+  }
+
+  .header .nav-header ul {
+    display: flex;
+  }
+  .header .nav-header ul li {
+    font-size: 1.8rem;
+    border-radius: 3rem;
+    margin: 0 1rem;
+    width: auto;
+  }
+
+  .header .nav-header ul li:hover {
+    background-color: #fff;
+  }
+
+  .header input:checked ~ ul {
+    background-color: transparent;
+    width: 100%;
+    flex-direction: row;
+    position: static;
+    transition: auto;
+  }
+
+  .section-hero {
+    background: url(../images/desktop/image-header.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .section-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'text1 egg'
+      'cup text2';
+  }
+  .section-about .text-about {
+    padding: 1.5rem;
+    height: 0;
+  }
+
+  .section-about div:nth-child(2) h3::before,
+  .section-about div:nth-child(4) h3:after {
+    width: 12rem;
+    top: 12px;
+  }
+
+  .section-about .text-about:nth-child(1) {
+    grid-area: text2;
+  }
+  .section-about .text-about:nth-child(2) {
+    grid-area: text1;
+  }
+  .section-about .egg {
+    grid-area: egg;
+  }
+  .section-about .cup {
+    grid-area: cup;
+  }
+  .section-about h2 {
+    margin: 0;
+  }
+
+  .section-about h3 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  .section-about p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  .section-design-photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-design-photo .design {
+    background: url(../images/desktop/image-graphic-design.jpg) no-repeat center
+      center;
+    background-size: cover;
+  }
+  .section-design-photo .photo {
+    background: url(../images/desktop/image-photography.jpg) no-repeat center
+      center;
+    background-size: cover;
+  }
+
+  .section-client {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'title-client title-client title-client'
+      'emily thomas jennie';
+  }
+  .section-client h2 {
+    grid-area: title-client;
+  }
+  .section-client .container-img-client:nth-child(1) {
+    grid-area: emily;
+  }
+  .section-client .container-img-client:nth-child(2) {
+    grid-area: thomas;
+  }
+
+  .section-client .container-img-client:nth-child(3) {
+    grid-area: jennie;
+  }
+
+  .section-projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* ---Tablet--- */
+@media (min-width: 767px) {
+  .section-about .text-about {
+    text-align: left;
+    margin: 0 0 0 5rem;
+    padding: 4rem;
+    align-items: flex-start;
+  }
+  .section-about p {
+    line-height: 2rem;
+    margin: 2rem 0.5rem;
+  }
+}
+/* ---Desktop--- */
+@media (min-width: 1000px) {
+  .section-about .text-about {
+    margin: 5rem 0 0 5rem;
+  }
+
+  .section-about p {
+    line-height: 3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .section-about .text-about {
+    width: 44rem;
+    margin: 10rem 0 0 10rem;
+  }
+
+  .section-about .text-about p {
+    font-size: 2rem;
+  }
+
+  .section-design-photo p {
+    margin: 5rem 10rem 0 10rem;
+    font-size: 2rem;
+  }
+}
