@@ -1,7 +1,4 @@
 /* ---Mobile--- */
-@media (min-width: 390px) {
-  
-}
 @media (min-width: 600px) {
   .header label, .detail-menu {
     display: none;
