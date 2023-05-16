@@ -1,4 +1,10 @@
 /* ---Mobile--- */
+@media (min-width:390px) {
+  .section-design-photo h2 {
+    margin-top: 47rem;
+  }
+}
+
 @media (min-width: 600px) {
   .header label, .detail-menu {
     display: none;
